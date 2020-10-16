@@ -1,0 +1,375 @@
+/* external css: flickity.css */
+
+.front-page-title {
+  font-size: 50px;
+}
+
+.is-fixed-top {
+  background-color: rgba(0, 0, 0, 0);
+  overflow: visible;
+}
+
+.dropdown.is-hoverable {
+  margin-right: 0.5em;
+}
+
+body.has-navbar-fixed-top {
+  padding-top: 0;
+}
+
+.navbar-name-div {
+  background-image: url('../img/Chrisi.jpg');
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  z-index: -2;
+}
+
+.contact-text-style {
+  font-size: 100px;
+  text-align: center;
+  border-bottom: solid;
+}
+
+.contact-content {
+  width: 70%;
+  margin: auto;
+}
+
+.contact-column {
+  justify-content: center;
+}
+
+.contact-social {
+  text-align: center;
+}
+
+.contact-social-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#page2 {
+  border-top-style: solid;
+}
+
+#page3 {
+  background-color: #D3E3EC; border-top-style: solid;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: white;
+  height: 70vh;
+  width: 100%;
+}
+
+.carousel-text-top {
+  position: absolute;
+  transform: translateY(-40vh);
+  font-size: 20px;
+  color: blue;
+}
+
+.carousel-text-bottom {
+  position: absolute;
+  transform: translateY(40vh);
+  font-size: 20px;
+  color: blue;
+  overflow: visible;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 100%;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 100%;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    height: 100%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: black;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.instagram-color {
+  color: #C13584;
+}
+
+.facebook-color {
+  color: #3b5998;
+}
+
+.etsy-color {
+  color: #EB6D20;
+}
+
+.email-color {
+  color: #B23121;
+}
+
+.twitter-color {
+  color: #1DA1F2;
+}
+
+/* Social media test CSS */
+
+.ml14 {
+  font-weight: 200;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  margin: 0;
+  text-align: center;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: -25%;
+  height: 2px;
+  width: 150%;
+  background-color: black;
+  transform-origin: 100% 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+  text-align: center;
+}
+
+.ml13 {
+  font-weight: 200;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.ml13 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  margin: 0;
+  text-align: center;
+}
+
+.ml13 .line {
+  opacity: 0;
+  position: absolute;
+  left: -25%;
+  height: 2px;
+  width: 150%;
+  background-color: black;
+  transform-origin: 100% 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+  text-align: center;
+}
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3em;
+  overflow: auto;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  float: right;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.ml11 .letters {
+}
+
+#textName {
+  white-space: nowrap;
+}
+
+#NameContainer {
+  display: none;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#PrintmakerContainer {
+  opacity: 0;
+}
+
+#ArtistContainer {
+  opacity: 0;
+}
+
+#flipped {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+#hidden_item {
+  margin: 0;
+  text-align: center;
+}
+
+#opacityHide {
+  opacity: 0;
+}
+
+#align_center {
+}
+
+.testclass {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+@media (min-width: 380px) {
+  #NameContainer {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 480px) {
+  #NameContainer {
+    font-size: 4em;
+  }
+  .ml11 {
+    font-size: 5.5em;
+  }
+}
+
+@media (min-width: 610px) {
+  #NameContainer {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 730px) {
+  #NameContainer {
+    font-size: 6em;
+  }
+}
+
+@media (min-width: 1420px) {
+  #NameContainer {
+    font-size: 10em;
+  }
+}
