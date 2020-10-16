@@ -1,0 +1,27 @@
+{
+  "name": "bulma-site",
+  "version": "1.0.0",
+  "description": "Site for mum",
+  "main": "sass/mystyles.scss",
+  "dependencies": {
+    "bulma-carousel": "^4.0.4"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Lawrence Barraclough",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "\u0016C:\\Users\\lawre\\OneDrive\\Documents\\Websites\\BulmaSite"
+  },
+  "keywords": [
+    "website"
+  ]
+}

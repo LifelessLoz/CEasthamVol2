@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chrisie Eastham</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/mystyles2.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel = "icon" href = "favicon.ico">
+  </head>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top">
+      <div class="navbar-item">
+        <div class="buttons">
+          <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+              <a class="button is-danger is-large" onclick="smoothScroll(document.getElementById('page2'))">
+                <span class="icon">
+                  <i class="fas fa-palette fa-2x"></i>
+                </span>
+              </a>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="button is-danger is-large" onclick="smoothScroll(document.getElementById('page3'));">
+            <span class="icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-item navbar-name-title-div">
+        <h1 class="front-page-title"></h1>
+      </div>
+    </nav>
+    <div class="hero-container">
+      <section class="hero is-success is-fullheight navbar-name-div" id="page1">
+        <div class="testclass"></div>
+        <div class="hero-body">
+          <div class="container" id="align_center">
+            <div class="column is-full" id="hidden_item">
+              <h1 class="ml11" id="NameContainer">
+                <span class="text-wrapper" id="flipped" style="float: none;">
+                  <span class="line line1" id="titleName"></span>
+                  <span class="letters" id="textName">mahtsaE sirhC</span>
+                </span>
+              </h1>
+            </div>
+            <div class="column is-full">
+              <h1 class="ml11" id="PainterContainer">
+                <span class="text-wrapper" id="flipped">
+                  <span class="line line1" id="titlePainter"></span>
+                  <span class="letters" id="textPainter">retniaP</span>
+                </span>
+              </h1>
+            </div>
+            <div class="column is-full">
+              <h1 class="ml11" id="PrintmakerContainer">
+                <span class="text-wrapper" id="flipped">
+                  <span class="line line1" id="titlePrintmaker"></span>
+                  <span class="letters" id="textPrintmaker">rekamtnirP</span>
+                </span>
+              </h1>
+            </div>
+            <div class="column is-full">
+              <h1 class="ml11" id="ArtistContainer">
+                <span class="text-wrapper" id="flipped">
+                  <span class="line line1" id="titleArtist"></span>
+                  <span class="letters" id="textArtist">tsitrA</span>
+                </span>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-fullheight" id="page2">
+        <div class="hero-body">
+          <div class="carousel js-flickity">
+            <div class="carousel-cell">
+              <p class="carousel-text-top">test text</p>
+              <img src="img/Portrait1.jpg" alt="">
+              <p class="carousel-text-bottom">test bottom</p>
+            </div>
+            <div class="carousel-cell">
+              <p class="carousel-text-top">test text</p>
+              <img src="img/Portrait2.jpg" alt="">
+              <p class="carousel-text-bottom">test bottom</p>
+            </div>
+            <div class="carousel-cell">
+              <p class="carousel-text-top">test text</p>
+              <img src="img/Portrait3.jpg" alt="">
+              <p class="carousel-text-bottom">test bottom</p>
+            </div>
+            <div class="carousel-cell">
+              <p class="carousel-text-top">test text</p>
+              <img src="img/Portrait4.jpg" alt="">
+              <p class="carousel-text-bottom">test bottom</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero is-fullheight" id="page3">
+        <div class="hero-body">
+          <div class="contact-content">
+            <div class="columns contact-column">
+              <div class="column is-two-thirds">
+                <h1 class="ml13">
+                  <span class="text-wrapper">
+                    <span class="letters">Contact Information</span>
+                    <span class="line"></span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <div class="columns contact-column">
+              <div class="column is-full contact-social">
+                <i class="fab fa-instagram fa-5x contact-social-item instagram-color" onmouseover="hideText('instagram.com/chrisieastham', '.ml14')"></i>
+                <i class="fab fa-facebook-square fa-5x contact-social-item facebook-color" onmouseover="hideText('facebook.com/people/Chris-Eastham/100006731625846', '.ml14')"></i>
+                <i class="fab fa-twitter fa-5x contact-social-item twitter-color" onmouseover="hideText('twitter.com/ChrisEastham4', '.ml14')"></i>
+                <i class="fab fa-etsy fa-5x contact-social-item etsy-color" onmouseover="hideText('etsy.com/shop/ChrisiEastham', '.ml14')"></i>
+                <i class="fas fa-envelope-square fa-5x contact-social-item email-color" onmouseover="hideText('christine.barraclough@gmail.com', '.ml14')"></i>
+              </div>
+            </div>
+            <div class="columns contact-column">
+              <div class="column is-full contact-social">
+                <h1 class="ml14" id="scrolltextHeader">
+                  <span class="text-wrapper">
+                    <span class="letters" id="scrollText"></span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="navbar.js"></script>
+    <script src="app.js"></script>
+    <script src="flickity.js"></script>
+    <script src="text_movement.min.js"></script>
+    <script src="social_media.js"></script>
+  </body>
+</html>
